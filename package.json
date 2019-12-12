@@ -1,0 +1,29 @@
+{
+  "name": "City-Finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "watch": "node-sass --include-path scss public/css/style.scss public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wandrew8/City-Finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wandrew8/City-Finder/issues"
+  },
+  "homepage": "https://github.com/wandrew8/City-Finder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-sass": "^4.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

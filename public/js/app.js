@@ -30,18 +30,29 @@ function displayValues() {
     const stateName = place.state.replace(regex, `<span class="h1">${this.value}</span>`)
     
     return `
-      <a class="link" href="https://en.wikipedia.org/wiki/${place.city}">
       <li>
       <strong><span class="rank"># ${place.rank}</span></strong>
         <span class="name">${cityName}, ${stateName}</span>
         <span class="population">${numberWithCommas(place.population)}</span>
-      </li></a>
+      </li>
     `;
   }).join('');
   suggestions.innerHTML = html;
+
 }
+
 
 const searchInput = document.querySelector('.search');
 const suggestions = document.querySelector('.suggestions');
 searchInput.addEventListener('change', displayValues);
 searchInput.addEventListener('keyup', displayValues);
+
+const cityNameDiv = document.querySelectorAll(".suggestions li");
+cityNameDiv.forEach(cityNameDiv => cityNameDiv.addEventListener('click', getWeather()))
+
+function getWeather() {
+  console.log("this is being clicked")
+const APIKey = '45d20cc421fedd596f1922360bb0d062'; 
+// const URL = `api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${APIKey}`;
+
+}

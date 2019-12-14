@@ -15,23 +15,28 @@
     <div class="row">
         <div class="col m4">
             <form class="search-form">
-                <input type="text" class="search" placeholder="City or State">
+                <input type="text" class="search" placeholder="Search for a City or State">
                 <ul class="suggestions">
-                    <li>Filter for a city</li>
+                    <li>Type a city name</li>
                     <li>or a state</li>
                 </ul>
             </form>
         </div>
 
         <div class="col m8">
-            <div class="mapouter">
-                <div class="gmap_canvas"><iframe width="600" height="500" id="map"
-                        src="https://maps.google.com/maps?q=usa&t=&z=3&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                        scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <div class="row">
+                <header class="header">
+                    <h1>Learn More About the Cities around You</h1>
+                </header>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="600" height="500" id="map"
+                            src="https://maps.google.com/maps?q=usa&t=&z=3&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                            scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
                 </div>
             </div>
+
         </div>
-    </div>
     </div>
 </body>
 <!-- Compiled and minified JavaScript -->
